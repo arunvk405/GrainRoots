@@ -21,21 +21,21 @@ export class ProductsComponent {
     {
       id: 1,
       name: 'Bamboo Toothbrush',
-      price: '₹99',
+      price: '₹59',
       image: './assets/images/brush_1.jpg',
       description: 'Eco-friendly bamboo toothbrush with soft bristles'
     },
     {
       id: 2,
       name: 'Bamboo Tongue Cleaner',
-      price: '₹79',
+      price: '₹39',
       image: './assets/images/toungue_1.jpg',
       description: 'Natural bamboo tongue cleaner for oral hygiene'
     },
     {
       id: 3,
       name: 'Bamboo Loofah',
-      price: '₹149',
+      price: '₹89',
       image: './assets/images/loofah.jpg',
       description: 'Natural exfoliating bamboo loofah for skin care'
     },
@@ -49,13 +49,13 @@ export class ProductsComponent {
     {
       id: 5,
       name: 'Wooden Pen',
-      price: '₹129',
+      price: '₹49',
       image: './assets/images/pen.jpg',
       description: 'Elegant wooden pen for sustainable writing'
     }
   ];
 
   onInquire(product: Product) {
-    alert(`Inquiry for ${product.name}. Contact us at info@grainroots.com`);
+    alert(`Inquiry for ${product.name}. Contact us at info@grainroots.in`);
   }
 }

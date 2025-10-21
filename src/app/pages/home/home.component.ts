@@ -54,14 +54,14 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       id: 1,
       name: 'Bamboo Toothbrush',
-      price: '₹99',
+      price: '₹59',
       image: './assets/images/brush_1.jpg',
       description: 'Eco-friendly bamboo toothbrush with soft bristles'
     },
     {
       id: 2,
       name: 'Bamboo Tongue Cleaner',
-      price: '₹79',
+      price: '₹39',
       image: './assets/images/toungue_1.jpg',
       description: 'Natural bamboo tongue cleaner for oral hygiene'
     },
