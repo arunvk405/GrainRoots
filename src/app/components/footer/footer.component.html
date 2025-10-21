@@ -1,0 +1,32 @@
+<footer class="bg-emerald-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8 mb-6">
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+                    <lucide-icon [img]="Sprout" class="w-6 h-6"></lucide-icon>
+                    <span class="text-xl font-bold">GrainRoots</span>
+                </div>
+                <p class="text-emerald-100">
+                    Your trusted source for eco-friendly bamboo and wooden products.
+                </p>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-4">Quick Links</h3>
+                <div class="space-y-2">
+                    <a routerLink="/" class="block hover:text-emerald-300 transition-colors">Home</a>
+                    <a routerLink="/products" class="block hover:text-emerald-300 transition-colors">Products</a>
+                    <a routerLink="/about" class="block hover:text-emerald-300 transition-colors">About</a>
+                    <a routerLink="/contact" class="block hover:text-emerald-300 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div>
+                <h3 class="font-semibold mb-4">Connect With Us</h3>
+              <p class="text-emerald-100 mb-2">Email: info&#64;grainroots.in</p>
+                <p class="text-emerald-100">Phone: +91 98*******10</p>
+            </div>
+        </div>
+        <div class="border-t border-emerald-700 pt-6 text-center text-emerald-100">
+            <p>&copy; {{ currentYear }} GrainRoots. All rights reserved. Made with ♥ for the Planet</p>
+        </div>
+    </div>
+</footer>

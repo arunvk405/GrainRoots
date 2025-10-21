@@ -1,0 +1,59 @@
+<nav class="bg-emerald-700 text-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center space-x-2">
+        <lucide-icon [img]="Sprout" class="w-8 h-8"></lucide-icon>
+        <span class="text-2xl font-bold">GrainRoots</span>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8">
+        <a routerLink="/" routerLinkActive="bg-emerald-600" [routerLinkActiveOptions]="{exact: true}" 
+           class="px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600 transition-colors">
+          Home
+        </a>
+        <a routerLink="/products" routerLinkActive="bg-emerald-600" 
+           class="px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600 transition-colors">
+          Products
+        </a>
+        <a routerLink="/about" routerLinkActive="bg-emerald-600" 
+           class="px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600 transition-colors">
+          About
+        </a>
+        <a routerLink="/contact" routerLinkActive="bg-emerald-600" 
+           class="px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600 transition-colors">
+          Contact
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden" (click)="toggleMobileMenu()">
+        <lucide-icon [img]="mobileMenuOpen ? X : Menu" class="w-6 h-6"></lucide-icon>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div *ngIf="mobileMenuOpen" class="md:hidden pb-4">
+      <a routerLink="/" routerLinkActive="bg-emerald-600" [routerLinkActiveOptions]="{exact: true}" 
+         (click)="closeMobileMenu()"
+         class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600">
+        Home
+      </a>
+      <a routerLink="/products" routerLinkActive="bg-emerald-600" 
+         (click)="closeMobileMenu()"
+         class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600">
+        Products
+      </a>
+      <a routerLink="/about" routerLinkActive="bg-emerald-600" 
+         (click)="closeMobileMenu()"
+         class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600">
+        About
+      </a>
+      <a routerLink="/contact" routerLinkActive="bg-emerald-600" 
+         (click)="closeMobileMenu()"
+         class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-emerald-600">
+        Contact
+      </a>
+    </div>
+  </div>
+</nav>
